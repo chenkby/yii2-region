@@ -1,5 +1,5 @@
 # yii2-region
-Yii2 中国省市区三级联动
+Yii2 中国省市区二/三级联动
 
 ## 安装
 
@@ -32,3 +32,28 @@ Yii2 中国省市区三级联动
         return $actions;
     }
 ```
+
+## 使用
+
+```php
+echo $form->field($model, 'province')->widget(\chenkby\region\Region::className(),[
+    'model'=>$model,
+    'url'=>$url,
+    'province'=>[
+        'attribute'=>'province',
+        'items'=>Region::getRegion(),
+        'options'=>['class'=>'form-control form-control-inline','prompt'=>'选择省份']
+    ],
+    'city'=>[
+        'attribute'=>'city',
+        'items'=>Region::getRegion($model['province']),
+        'options'=>['class'=>'form-control form-control-inline','prompt'=>'选择城市']
+    ],
+    'district'=>[
+        'attribute'=>'district',
+        'items'=>Region::getRegion($model['city']),
+        'options'=>['class'=>'form-control form-control-inline','prompt'=>'选择县/区']
+    ]
+]);
+```
+如果不需要县/区，可以把district删除。
