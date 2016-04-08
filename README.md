@@ -36,6 +36,8 @@ Yii2 中国省市区三级联动
 ## 使用
 
 ```php
+$url=\yii\helpers\Url::toRoute(['get-region']);
+
 echo $form->field($model, 'province')->widget(\chenkby\region\Region::className(),[
     'model'=>$model,
     'url'=>$url,
@@ -56,7 +58,7 @@ echo $form->field($model, 'province')->widget(\chenkby\region\Region::className(
     ]
 ]);
 ```
-如果不需要县/区，可以把district删除。
+province为省份配置，可用的选项可以查看Html::dropdownList。如果不需要县/区，可以把district删除。
 
 ## demo
 
