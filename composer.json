@@ -1,0 +1,23 @@
+{
+    "name": "chenkby/yii2-region",
+    "description": "Yii2 中国省市区三级联动",
+    "keywords": [
+        "yii2","region","province","city","district"
+    ],
+    "type": "yii2-widget",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "ChenGuanQun",
+            "email": "99912250@qq.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "chenkby\\region\\": ""
+        }
+    }
+}
