@@ -57,3 +57,8 @@ echo $form->field($model, 'province')->widget(\chenkby\region\Region::className(
 ]);
 ```
 如果不需要县/区，可以把district删除。
+
+## demo
+
+![image](https://raw.githubusercontent.com/chenkby/yii2-region/master/demo.png)
+
