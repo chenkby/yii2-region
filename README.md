@@ -1,5 +1,5 @@
 # yii2-region
-Yii2 中国省市区二/三级联动
+Yii2 region select widget
 
 ## 安装
 
