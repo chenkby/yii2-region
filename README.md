@@ -1,5 +1,5 @@
 # yii2-region
-Yii2 中国省市区三级联动
+Yii2 中国省市区三级联动(https://github.com/chenkby/yii2-region)
 
 ## 安装
 
