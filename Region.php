@@ -48,7 +48,7 @@ class Region extends Widget
             if(empty($this->district['options']['prompt']))$this->district['options']['prompt']='选择县/区';
             $districtId=Html::getInputId($this->model,$this->district['attribute']);
             $districtDefault=Html::renderSelectOptions('district',[''=>$this->district['options']['prompt']]);
-            $this->city['options']=ArrayHelper::merge($this->district['options'],[
+            $this->city['options']=ArrayHelper::merge($this->city['options'],[
                 'onchange'=>"
                 if($(this).val()!=''){
                     $.get('{$this->url}?parent_id='+$(this).val(),function(data){
