@@ -33,6 +33,8 @@ Yii2 中国省市区三级联动(https://github.com/chenkby/yii2-region)
     }
 ```
 
+3、启用urlManager的enablePrettyUrl的，即隐藏index.php
+
 ## 使用
 
 ```php
